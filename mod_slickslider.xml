@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Slick Slider!</name>
+    <author>codeChap</author>
+    <version>1.0.0</version>
+    <description>A simple Slick Slider module.</description>
+    <files>
+        <folder>css</folder>
+        <folder>css/fonts</folder>
+        <folder>js</folder>
+        <filename>css/slick.css</filename>
+        <filename>css/slick-theme.css</filename>
+        <filename>css/fonts/slick.eot</filename>
+        <filename>css/fonts/slick.svg</filename>
+        <filename>css/fonts/slick.ttf</filename>
+        <filename>css/fonts/slick.woff</filename>
+        <filename>js/slick.min.js</filename>
+        <filename>mod_slickslider.xml</filename>
+        <filename module="mod_slickslider">mod_slickslider.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="images" label="Images">
+                <field name="slide_a" type="media" label="Slide A" />
+                <field name="slide_b" type="media" label="Slide B" />
+                <field name="slide_c" type="media" label="Slide C" />
+                <field name="slide_d" type="media" label="Slide D" />
+                <field name="slide_e" type="media" label="Slide E" />
+                <field name="slide_f" type="media" label="Slide F" />
+                <field name="slide_g" type="media" label="Slide G" />
+                <field name="slide_h" type="media" label="Slide H" />
+                <field name="slide_i" type="media" label="Slide I" />
+                <field name="slide_j" type="media" label="Slide J" />
+                <field name="slide_k" type="media" label="Slide K" />
+                <field name="slide_l" type="media" label="Slide L" />
+                <field name="slide_m" type="media" label="Slide M" />
+                <field name="slide_n" type="media" label="Slide N" />
+                <field name="slide_o" type="media" label="Slide O" />
+                <field name="slide_p" type="media" label="Slide P" />
+                <field name="slide_q" type="media" label="Slide Q" />
+                <field name="slide_u" type="media" label="Slide U" />
+                <field name="slide_r" type="media" label="Slide R" />
+                <field name="slide_s" type="media" label="Slide S" />
+                <field name="slide_t" type="media" label="Slide T" />
+                <field name="slide_u" type="media" label="Slide U" />
+                <field name="slide_v" type="media" label="Slide V" />
+                <field name="slide_w" type="media" label="Slide W" />
+                <field name="slide_x" type="media" label="Slide X" />
+                <field name="slide_y" type="media" label="Slide Y" />
+                <field name="slide_z" type="media" label="Slide Z" />
+            </fieldset>
+            <fieldset name="basic">
+                <field name="autoplay" type="checkbox" label="Autoplay" description="Start slider automatically" value="1" default="0" />
+                <field name="css_ease" type="checkbox" label="Easing" description="Ease effect" value="1" default="0" />
+                <field name="show_arrows" type="checkbox" label="Show arrows" description="Start next and prev arrows" value="1" default="0" />
+                <field name="show_dots" type="checkbox" label="Show dots" description="Show dots in the slider" value="1" default="0" />
+                <field name="slides_to_show" type="textbox" label="Slides to show" description="How many slides per view" value="1" default="1" />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" name="Slickslider" priority="1">http://www.github.com/codechap/mod_slickslider/update.xml</server>
+    </updateservers>
+    <scriptfile>script.php</scriptfile>
+</extension>
