@@ -42,12 +42,33 @@ $images = array_filter(
         $params->get('slide_o'),
         $params->get('slide_p'),
         $params->get('slide_q'),
+        $params->get('slide_u'),
         $params->get('slide_r'),
+        $params->get('slide_s'),
+        $params->get('slide_t'),
+        $params->get('slide_u'),
+        $params->get('slide_v'),
+        $params->get('slide_w'),
         $params->get('slide_x'),
         $params->get('slide_y'),
         $params->get('slide_z')
     )
 );
+
+// Jumble the images
+if( $params->get('jumble') ){
+
+    $items = array_values($images);
+
+    mt_srand(1024);
+
+    for ($i = count($items) - 1; $i > 0; $i--) {
+        $j = mt_rand(0, $i);
+        list($items[$i], $items[$j]) = array($items[$j], $items[$i]);
+    }
+
+    $images = $items;
+}
  
 // Helper
 require JModuleHelper::getLayoutPath('mod_slickslider', 'default');

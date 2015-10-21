@@ -56,6 +56,7 @@
                 <field name="autoplay" type="checkbox" label="Autoplay" description="Start slider automatically" value="1" default="0" />
                 <field name="css_ease" type="checkbox" label="Easing" description="Ease effect" value="1" default="0" />
                 <field name="show_arrows" type="checkbox" label="Show arrows" description="Start next and prev arrows" value="1" default="0" />
+                <field name="jumble" type="checkbox" label="Jumble images" description="Mix up the images" value="1" default="0" />
                 <field name="show_dots" type="checkbox" label="Show dots" description="Show dots in the slider" value="1" default="0" />
                 <field name="slides_to_show" type="textbox" label="Slides to show" description="How many slides per view" value="1" default="1" />
             </fieldset>
