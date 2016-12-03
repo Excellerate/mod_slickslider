@@ -53,6 +53,8 @@
                 <field name="slide_z" type="media" label="Slide Z" />
             </fieldset>
             <fieldset name="basic">
+                <field name="height" type="text" label="Height" description="Height of the slider in pixels" default="384" />
+                <field name="cover" type="checkbox" label="Brand Element" description="Overlay with brand element" value="1" default="0" />
                 <field name="autoplay" type="checkbox" label="Autoplay" description="Start slider automatically" value="1" default="0" />
                 <field name="css_ease" type="checkbox" label="Easing" description="Ease effect" value="1" default="0" />
                 <field name="show_arrows" type="checkbox" label="Show arrows" description="Start next and prev arrows" value="1" default="0" />
