@@ -52,6 +52,35 @@
                 <field name="slide_y" type="media" label="Slide Y" />
                 <field name="slide_z" type="media" label="Slide Z" />
             </fieldset>
+            <fieldset name="links" label="Links">
+                <field name="link_a" type="url" label="Link A" />
+                <field name="link_b" type="url" label="Link B" />
+                <field name="link_c" type="url" label="Link C" />
+                <field name="link_d" type="url" label="Link D" />
+                <field name="link_e" type="url" label="Link E" />
+                <field name="link_f" type="url" label="Link F" />
+                <field name="link_g" type="url" label="Link G" />
+                <field name="link_h" type="url" label="Link H" />
+                <field name="link_i" type="url" label="Link I" />
+                <field name="link_j" type="url" label="Link J" />
+                <field name="link_k" type="url" label="Link K" />
+                <field name="link_l" type="url" label="Link L" />
+                <field name="link_m" type="url" label="Link M" />
+                <field name="link_n" type="url" label="Link N" />
+                <field name="link_o" type="url" label="Link O" />
+                <field name="link_p" type="url" label="Link P" />
+                <field name="link_q" type="url" label="Link Q" />
+                <field name="link_u" type="url" label="Link U" />
+                <field name="link_r" type="url" label="Link R" />
+                <field name="link_s" type="url" label="Link S" />
+                <field name="link_t" type="url" label="Link T" />
+                <field name="link_u" type="url" label="Link U" />
+                <field name="link_v" type="url" label="Link V" />
+                <field name="link_w" type="url" label="Link W" />
+                <field name="link_x" type="url" label="Link X" />
+                <field name="link_y" type="url" label="Link Y" />
+                <field name="link_z" type="url" label="Link Z" />
+            </fieldset>
             <fieldset name="basic">
                 <field name="height" type="text" label="Height" description="Height of the slider in pixels" default="384" />
                 <field name="cover" type="checkbox" label="Brand Element" description="Overlay with brand element" value="1" default="0" />

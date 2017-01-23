@@ -61,6 +61,39 @@ $images = array_filter(
 	)
 );
 
+// Find all links
+$links = array_filter(
+	array(
+		$params->get('link_a'),
+		$params->get('link_b'),
+		$params->get('link_c'),
+		$params->get('link_d'),
+		$params->get('link_e'),
+		$params->get('link_f'),
+		$params->get('link_g'),
+		$params->get('link_h'),
+		$params->get('link_i'),
+		$params->get('link_j'),
+		$params->get('link_k'),
+		$params->get('link_l'),
+		$params->get('link_m'),
+		$params->get('link_n'),
+		$params->get('link_o'),
+		$params->get('link_p'),
+		$params->get('link_q'),
+		$params->get('link_u'),
+		$params->get('link_r'),
+		$params->get('link_s'),
+		$params->get('link_t'),
+		$params->get('link_u'),
+		$params->get('link_v'),
+		$params->get('link_w'),
+		$params->get('link_x'),
+		$params->get('link_y'),
+		$params->get('link_z')
+	)
+);
+
 // Jumble the images
 if( $params->get('jumble') ){
 
@@ -71,9 +104,11 @@ if( $params->get('jumble') ){
 	for ($i = count($items) - 1; $i > 0; $i--) {
 		$j = mt_rand(0, $i);
 		list($items[$i], $items[$j]) = array($items[$j], $items[$i]);
+		list($links[$i], $links[$j]) = array($links[$j], $links[$i]);
 	}
 
 	$images = $items;
+	$links = $links;
 }
  
 // Helper

@@ -1,8 +1,14 @@
 <?php defined('_JEXEC') or die; ?>
 <?= $cover ? '<div class="slick-cover" style="height:'.$height.'px;"></div>' : null; ?>
 <div id="slickSlider_<?= $random; ?>" class="slick-slider" style="height:<?= $height; ?>px;">
-	<?php foreach($images as $image) : ?>
-	<div class="image" style="background-image:url(<?= JUri::base() . $image; ?>); height:<?= $height; ?>px;"></div>
+	<?php foreach($images as $k => $image) : ?>
+	<?php if( !empty($links[$k]) ) : ?>
+	<a target="_blank" href="<?= $links[$k]; ?>">
+	<?php endif; ?>
+		<div class="image" style="background-image:url(<?= JUri::base() . $image; ?>); height:<?= $height; ?>px;"></div>
+	<?php if( !empty($links[$k]) ) : ?>
+	</a>
+	<?php endif; ?>
 	<?php endforeach; ?>
 </div>
 
