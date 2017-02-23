@@ -1,30 +1,8 @@
 {
-    "name": "codechap/mod_slickslider",
+    "name": "excellerate/mod_slickslider",
     "type": "joomla-module",
     "description": "A Slick Slider module for Joomla",
-    "license": "MIT",
-    "keywords": ["property"],
-    "authors": [
-        {
-            "name": "Derrick Egersdorfer",
-            "email": "hello@codechap.com",
-            "role": "Developer"
-        }
-    ],
-    "repositories" : [
-        {
-            "type": "vcs",
-            "url": "https://github.com/codechap/gmaven"
-        }
-    ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.10",
-        "composer/installers": "~1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "CodeChap\\": "src/Gmaven/"
-        }
+        "composer/installers": "*"
     }
 }
