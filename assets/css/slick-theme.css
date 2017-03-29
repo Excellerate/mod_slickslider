@@ -4,9 +4,14 @@
 	width: 400px;
 	z-index:1;
 	background-position:top right;
-	background-image:url('../img/cover.png');
 	background-repeat:no-repeat;
 }
+	.red.slick-cover{
+		background-image:url('../img/red.png');
+	}
+	.green.slick-cover{
+		background-image:url('../img/green.png');
+	}
 
 /* Slider */
 .slick-loading .slick-list

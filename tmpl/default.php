@@ -1,5 +1,5 @@
 <?php defined('_JEXEC') or die; ?>
-<?= $cover ? '<div class="slick-cover" style="height:'.$height.'px;"></div>' : null; ?>
+<?= $cover ? '<div class="'.$cover.' slick-cover" style="height:'.$height.'px;"></div>' : null; ?>
 <div id="slickSlider_<?= $random; ?>" class="slick-slider" style="height:<?= $height; ?>px;">
 	<?php foreach($images as $k => $image) : ?>
 	<?php if( !empty($links[$k]) ) : ?>
