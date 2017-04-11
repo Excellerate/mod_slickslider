@@ -5,7 +5,7 @@
 	<?php if( !empty($links[$k]) ) : ?>
 	<a target="_blank" href="<?= $links[$k]; ?>">
 	<?php endif; ?>
-		<div class="image" style="background-image:url(<?= JUri::base() . $image; ?>); height:<?= $height; ?>px;"></div>
+		<div class="image" style="background-image:url(<?= JUri::base() . $image; ?>); height:<?= $height; ?>px; background-size:contain; background-repeat:no-repeat;"></div>
 	<?php if( !empty($links[$k]) ) : ?>
 	</a>
 	<?php endif; ?>

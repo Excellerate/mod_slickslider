@@ -110,6 +110,16 @@ if( $params->get('jumble') ){
 	$images = $items;
 	$links = $links;
 }
- 
-// Helper
-require JModuleHelper::getLayoutPath('mod_slickslider', 'default');
+
+if(count($images) > 1){
+
+	// Layout for many images
+	require JModuleHelper::getLayoutPath('mod_slickslider', 'default');
+}
+else{
+
+	// Layout for a single image
+	require JModuleHelper::getLayoutPath('mod_slickslider', 'single');
+}
+
+?>
