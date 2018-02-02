@@ -17,7 +17,7 @@ defined('_JEXEC') or die;
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . '/modules/mod_slickslider/assets/css/slick.css');
 $document->addStyleSheet(JURI::base() . '/modules/mod_slickslider/assets/css/slick-theme.css');
-$document->addScript(JURI::base() . 'modules/mod_slickslider/assets/js/slick.min.js');
+$document->addScript(JURI::base() . 'modules/mod_slickslider/assets/js/slick.min.js', 'text/javascript', 'async');
 
 // Create random unique name
 $random = uniqid();
